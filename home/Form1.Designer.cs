@@ -151,7 +151,7 @@ namespace home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(911, 519);
+            this.ClientSize = new System.Drawing.Size(950, 553);
             this.Controls.Add(this.edad18);
             this.Controls.Add(this.edad17);
             this.Controls.Add(this.edad15);

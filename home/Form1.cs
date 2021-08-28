@@ -12,19 +12,14 @@ namespace home
 {
     public partial class home : Form
     {
-        static string getString(char[] arr)
-        {
-            string s = new string(arr);
-
-            return s;
-        }
+        
 
         public home()
         {
             InitializeComponent();
             rtxtResults.Text = "Pedidos";
         }
-
+        string texto = "";
         private void btnguardar_Click(object sender, EventArgs e)
         {
             rtxtResults.Text = (rtxtResults.Text + "\n\nNombre: " + txtnombre.Text + "\nEdad: ");
@@ -41,6 +36,7 @@ namespace home
                 rtxtResults.Text = (rtxtResults.Text + "mas de 18");
             }
             rtxtResults.Text = (rtxtResults.Text + "\nfecha: " + dtpfecha.Value);
+            texto = "hahaha";
         }
 
         private void edad15_CheckedChanged(object sender, EventArgs e)
@@ -69,10 +65,11 @@ namespace home
                 edad15.Checked = false;
             }
         }
-        Form reporte = new reporte();
+        //Form reporte = new reporte();
         private void btnreportar_Click(object sender, EventArgs e)
         {
+            Form reporte = new reporte();
             reporte.Show();
-        }
+        } 
     }
 }

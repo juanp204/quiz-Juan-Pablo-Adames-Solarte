@@ -36,6 +36,7 @@ namespace home
             this.label2 = new System.Windows.Forms.Label();
             this.btncerrar = new System.Windows.Forms.Button();
             this.txtrepenv = new System.Windows.Forms.Label();
+            this.rtxtreporte = new System.Windows.Forms.RichTextBox();
             this.SuspendLayout();
             // 
             // rtbreporte
@@ -96,18 +97,27 @@ namespace home
             this.txtrepenv.AutoSize = true;
             this.txtrepenv.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtrepenv.Font = new System.Drawing.Font("Arial Rounded MT Bold", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtrepenv.Location = new System.Drawing.Point(158, 172);
+            this.txtrepenv.Location = new System.Drawing.Point(158, 169);
             this.txtrepenv.Name = "txtrepenv";
             this.txtrepenv.Size = new System.Drawing.Size(464, 46);
             this.txtrepenv.TabIndex = 6;
             this.txtrepenv.Text = "Su reporte se a enviado";
             this.txtrepenv.Visible = false;
             // 
+            // rtxtreporte
+            // 
+            this.rtxtreporte.Location = new System.Drawing.Point(496, 22);
+            this.rtxtreporte.Name = "rtxtreporte";
+            this.rtxtreporte.Size = new System.Drawing.Size(263, 307);
+            this.rtxtreporte.TabIndex = 7;
+            this.rtxtreporte.Text = "";
+            // 
             // reporte
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.rtxtreporte);
             this.Controls.Add(this.txtrepenv);
             this.Controls.Add(this.btncerrar);
             this.Controls.Add(this.label2);
@@ -131,5 +141,6 @@ namespace home
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btncerrar;
         private System.Windows.Forms.Label txtrepenv;
+        private System.Windows.Forms.RichTextBox rtxtreporte;
     }
 }

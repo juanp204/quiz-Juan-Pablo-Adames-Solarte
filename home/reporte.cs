@@ -30,6 +30,7 @@ namespace home
             rtbreporte.Hide();
             txtrepenv.Show();
             btnenviar.Hide();
+            rtxtreporte.Hide();
         }
     }
 }
