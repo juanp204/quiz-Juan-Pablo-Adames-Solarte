@@ -12,10 +12,12 @@ namespace home
 {
     public partial class reporte : Form
     {
-        public reporte()
+        public reporte(string texto)
         {
             InitializeComponent();
+            rtxtreporte.Text = texto;
         }
+
 
         private void btncerrar_Click(object sender, EventArgs e)
         {

@@ -19,10 +19,10 @@ namespace home
             InitializeComponent();
             rtxtResults.Text = "Pedidos";
         }
-        string texto = "";
+        public string texto = "";
         private void btnguardar_Click(object sender, EventArgs e)
         {
-            rtxtResults.Text = (rtxtResults.Text + "\n\nNombre: " + txtnombre.Text + "\nEdad: ");
+            rtxtResults.Text = (rtxtResults.Text + "\n\nNombre: " + txtnombre.Text +"\nT.I: "+ txtdocumento.Text + "\nEdad: ");
             if (edad15.Checked)
             {
                 rtxtResults.Text = (rtxtResults.Text + "menos de 15");
@@ -36,7 +36,7 @@ namespace home
                 rtxtResults.Text = (rtxtResults.Text + "mas de 18");
             }
             rtxtResults.Text = (rtxtResults.Text + "\nfecha: " + dtpfecha.Value);
-            texto = "hahaha";
+            texto = rtxtResults.Text;
         }
 
         private void edad15_CheckedChanged(object sender, EventArgs e)
@@ -68,7 +68,7 @@ namespace home
         //Form reporte = new reporte();
         private void btnreportar_Click(object sender, EventArgs e)
         {
-            Form reporte = new reporte();
+            Form reporte = new reporte(texto);
             reporte.Show();
         } 
     }

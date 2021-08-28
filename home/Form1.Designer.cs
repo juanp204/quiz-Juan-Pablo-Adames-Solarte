@@ -40,12 +40,14 @@ namespace home
             this.edad15 = new System.Windows.Forms.RadioButton();
             this.edad17 = new System.Windows.Forms.RadioButton();
             this.edad18 = new System.Windows.Forms.RadioButton();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txtdocumento = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // btnguardar
             // 
             this.btnguardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnguardar.Location = new System.Drawing.Point(45, 445);
+            this.btnguardar.Location = new System.Drawing.Point(45, 414);
             this.btnguardar.Name = "btnguardar";
             this.btnguardar.Size = new System.Drawing.Size(112, 44);
             this.btnguardar.TabIndex = 0;
@@ -89,7 +91,7 @@ namespace home
             // 
             // dtpfecha
             // 
-            this.dtpfecha.Location = new System.Drawing.Point(42, 280);
+            this.dtpfecha.Location = new System.Drawing.Point(42, 341);
             this.dtpfecha.Name = "dtpfecha";
             this.dtpfecha.Size = new System.Drawing.Size(200, 22);
             this.dtpfecha.TabIndex = 9;
@@ -97,7 +99,7 @@ namespace home
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(39, 109);
+            this.label2.Location = new System.Drawing.Point(42, 169);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(41, 17);
             this.label2.TabIndex = 10;
@@ -106,7 +108,7 @@ namespace home
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(42, 246);
+            this.label3.Location = new System.Drawing.Point(42, 307);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(47, 17);
             this.label3.TabIndex = 11;
@@ -115,7 +117,7 @@ namespace home
             // edad15
             // 
             this.edad15.AutoSize = true;
-            this.edad15.Location = new System.Drawing.Point(42, 143);
+            this.edad15.Location = new System.Drawing.Point(45, 203);
             this.edad15.Name = "edad15";
             this.edad15.Size = new System.Drawing.Size(85, 21);
             this.edad15.TabIndex = 12;
@@ -126,7 +128,7 @@ namespace home
             // edad17
             // 
             this.edad17.AutoSize = true;
-            this.edad17.Location = new System.Drawing.Point(42, 171);
+            this.edad17.Location = new System.Drawing.Point(45, 231);
             this.edad17.Name = "edad17";
             this.edad17.Size = new System.Drawing.Size(109, 21);
             this.edad17.TabIndex = 13;
@@ -138,7 +140,7 @@ namespace home
             // edad18
             // 
             this.edad18.AutoSize = true;
-            this.edad18.Location = new System.Drawing.Point(42, 199);
+            this.edad18.Location = new System.Drawing.Point(45, 259);
             this.edad18.Name = "edad18";
             this.edad18.Size = new System.Drawing.Size(85, 21);
             this.edad18.TabIndex = 14;
@@ -147,11 +149,29 @@ namespace home
             this.edad18.UseVisualStyleBackColor = true;
             this.edad18.CheckedChanged += new System.EventHandler(this.edad18_CheckedChanged);
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(39, 105);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(112, 17);
+            this.label4.TabIndex = 15;
+            this.label4.Text = "# De documento";
+            // 
+            // txtdocumento
+            // 
+            this.txtdocumento.Location = new System.Drawing.Point(42, 136);
+            this.txtdocumento.Name = "txtdocumento";
+            this.txtdocumento.Size = new System.Drawing.Size(223, 22);
+            this.txtdocumento.TabIndex = 16;
+            // 
             // home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(950, 553);
+            this.Controls.Add(this.txtdocumento);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.edad18);
             this.Controls.Add(this.edad17);
             this.Controls.Add(this.edad15);
@@ -183,6 +203,8 @@ namespace home
         private System.Windows.Forms.RadioButton edad15;
         private System.Windows.Forms.RadioButton edad17;
         private System.Windows.Forms.RadioButton edad18;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox txtdocumento;
     }
 }
 
